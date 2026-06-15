@@ -1,0 +1,319 @@
+body {
+  position: relative;
+  user-select: none;
+  display: flex;
+  font-size: 14px;
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+body {
+    -webkit-tap-highlight-color: transparent;
+}
+body::before {
+  position: absolute;
+  /* z-index: 40; */
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105px;
+  background: linear-gradient(63.28deg, rgba(66, 133, 244, .1) 16.87%, rgba(155, 114, 203, .1) 61.56%, rgba(217, 101, 112, .1) 99.37%);
+}
+.dddssw {
+  position: fixed;
+  z-index: 35;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105px;
+  background-color: white;
+}
+body::after {
+  position: fixed;
+  z-index: 100000;
+  content: 'All rights reserved to My Library Last modified 2025.';
+  left: 0;
+  bottom: -72px;
+  padding: 30px;
+  max-width: 200px;
+  text-shadow: 0px -72px 0px;
+  opacity: .4;
+}
+:root {
+  --main-background: linear-gradient(63.28deg, rgba(66, 133, 244, .1) 16.87%, rgba(155, 114, 203, .1) 61.56%, rgba(217, 101, 112, .1) 99.37%);
+  --main-background2: linear-gradient(63.28deg, rgb(66 133 244 / 32%) 16.87%, rgb(155 114 203 / 21%) 61.56%, rgb(217 101 112 / 31%) 99.37%);
+}
+input, textarea, select {
+  outline-color: #0077ff;
+}
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+hr {
+  border: none;
+  height: 1px;
+  margin: 0 5px;
+  background: #6373912e;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.logo-div label input, .logo-div a input {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+}
+textarea {
+  resize: none;
+}
+.dddse {
+  width: 1px;
+  height: 18px;
+  background-color: #6373912e;
+  margin: auto 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  transition: ease 0.2s;
+  -webkit-appearance: none;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background: url('https://raw.githubusercontent.com/Tybascript1234/Languag/95121e8b5aeb29adcd37d41bc165b78e78e78874/image/cross.svg') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+}
+input[type="search"]::-webkit-search-cancel-button:active {
+  transform: scale(0.90);
+  transition: ease 0.0s;
+  opacity: .8;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.decoment {
+  position: relative;
+  padding: 18px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+  position: relative;
+}
+.logo icon {
+  margin-right: 5px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.logo #fff2 {
+  height: 26px;
+  margin-right: 10px;
+}
+.logo:hover icon {
+  background-color: #e7f4ff;
+}
+.logo-div {
+  position: absolute;
+  cursor: context-menu;
+  transition: all 0.4s ease;
+  z-index: -11;
+  top: 40px;
+  margin-top: -40px;
+  left: -10px; /* 5px */
+  opacity: 0;
+  padding: 5px;
+  border-radius: 16px; /* 8px */
+  box-shadow: 0px 0px 0px 1px #d1d9e0, 0px 8px 16px -4px #25292e14, 0px 4px 32px -4px #25292e14, 0px 24px 48px -12px #25292e14, 0px 48px 96px -24px #25292e14;
+  background-color: white;
+}
+.logo-div::before {
+  position: absolute;
+  cursor: pointer;
+  content: '';
+  top: -40px;
+  height: 40px;
+  width: 200px;
+  display: none;
+}
+.logo:hover .logo-div::before {
+  display: block;
+}
+.logo-div label, .logo-div a {
+    cursor: pointer;
+    border-radius: 16px; /* 3px */
+    padding: 0 15px;
+    /* padding-left: 15px; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 186px;
+}
+.logo-div label:hover, .logo-div a:hover {
+  background: #373d460c;
+}
+.logo-div label:focus, .logo-div a:focus {
+  background: #373d461c;
+}
+.logo-div label img, .logo-div a img {
+  height: 18px;
+}
+icon svg {
+  height: 24px;
+  display: flex;
+}
+button {
+  cursor: pointer;
+  color: #4c546d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ssswwe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 7px;
+}
+.ssswwe h3 {
+  margin: 0;
+}
+.myElement.hovered .logo-div {
+  transition: all 0.2s ease;
+  margin-top: 0;
+  opacity: 1;
+  z-index: 100;
+}
+.new-window-btn {
+  cursor: pointer;
+  background: var(--main-background);
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  padding-right: 5px;
+  border-radius: 25px;
+  transition: all 0.4s ease;
+  /* transition: background-color 0.2s; */
+}
+.new-window-btn:hover {
+  transition: all 0.0s ease;
+  background-color: #f1f5f9;
+}
+.new-window-btn button {
+  position: relative;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  color: rgb(76, 84, 109);
+  background: rgb(255 255 255);
+  line-height: 0;
+  cursor: pointer;
+  font-size: 20px;
+  border: solid 1px #ccc;
+  border-radius: 20px;
+  margin-left: 6px;
+}
+/* #new-window-btn:hover button {
+  background-color: #4c546d13;
+}
+#new-window-btn:active button {
+  background-color: #4c546d1f;
+} */
+.new-window-btn button:focus {
+  box-shadow: 0 0 0 3px #c7dbff;
+  border-color: rgb(40, 126, 255);
+}
+.coco {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.coco {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 25px;
+    border: solid 1px #4a515d52;
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+.coco svg {
+    height: 17px;
+    width: 17px;
+}
+.coco input {
+    position: relative;
+    transition: 0.3s ease;
+    z-index: 4;
+    flex: 1 1;
+    height: 33px;
+    padding: 0 40px;
+    padding-right: 10px;
+    /* padding-right: 16px; */
+    border: none;
+    background: #0000;
+    outline: none;
+}
+.coco:focus-within {
+    outline: solid 2px #0077ff;
+    outline-offset: 2px;
+    border: solid 1px solid 1px #4a515d52;
+}
+.coco:focus-within input, .file-name-input:focus {
+    padding-right: 35px !important;
+}
+.coco label {
+    position: absolute;
+    padding-left: 14px;
+}
+.fox {
+    position: absolute;
+    right: 0;
+    left: auto;
+    width: 40px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    z-index: 5;
+    border: none;
+    background: #0000;
+}
+.fox:hover {
+    background: #373d460c;
+}
+.fox:active {
+    background: #373d461c;
+}
+
+
+/* library */
+.library {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#toggle-sidebar {
+  margin-right: 8px;
+  color: #4c546d;
+}

@@ -1,0 +1,79 @@
+.dark-body .sidebar-title {
+    border-bottom: 1px solid rgb(215 221 227);
+    color: rgb(144 155 165);
+}
+.dark-body #editor-page .ripple {
+    background: rgba(122, 122, 122, 0.116);
+}
+.dark-body .tool-btn:hover, .tool-btn.active {
+    color: rgb(46 128 255);
+    background-color: rgb(110 155 195 / 16%);
+}
+.dark-body .tool-btn {
+    color: #4c546d;
+}
+.dark-body .font-select, .dark-body .color-input {
+    color: #4c546d;
+    background-color: rgb(104 115 127 / 21%);
+}
+.dark-body .sidebar {
+    background-color: rgb(246 248 250);
+    border-right: solid 1px #d7dde3;
+}
+.dark-body .header {
+    color: #333;
+    background-color: rgb(246 248 250);
+}
+.dark-body #editor-page {
+    background: #ffffff;
+}
+.dark-body .ddddd {
+    background: rgb(236 239 241);
+    box-shadow: 0 0 0 1px rgb(215 221 227);
+}
+.dark-body .check {
+    background-color: rgb(255 255 255);
+}
+.dark-body .check:hover {
+    background-color: rgb(255 255 255) !important;
+}
+.dark-body .check button:hover {
+    background: #e6edf1 !important;
+}
+.dark-body .file-item button:hover {
+    background: #fff;
+}
+.dark-body .file-item button {
+    color: #868d94;
+}
+.dark-body .file-item:hover {
+    background-color: #d7dde3;
+}
+.dark-body .project-header {
+    color: #333;
+    background-color: white;
+    background: linear-gradient(63.28deg, rgba(66, 133, 244, .1) 16.87%, rgba(155, 114, 203, .1) 61.56%, rgba(217, 101, 112, .1) 99.37%);
+}
+.dark-body .sswe {
+    fill: #333;
+}
+.dark-body .sswe:hover {
+    background-color: rgba(66, 68, 99, 0.089);
+}
+.dark-body .sswe:focus {
+    background-color: rgba(66, 68, 99, 0.089);
+}
+.dark-body .sswe .ripple {
+    background-color: rgb(66 68 99 / 6%);
+}
+.dark-body .project-name:hover {
+    box-shadow: 0 0 0 8px rgba(66, 68, 99, 0.089);
+    background-color: rgba(66, 68, 99, 0.089);
+}
+.dark-body .description-edit, .dark-body .project-name-edit {
+background-color: #ffffff !important;
+    background: linear-gradient(63.28deg, rgba(66, 133, 244, .1) 16.87%, rgba(155, 114, 203, .1) 61.56%, rgba(217, 101, 112, .1) 99.37%);
+}
+.dark-body #editor-page .btn .ripple {
+    background-color: rgba(255, 255, 255, 0.26);
+}

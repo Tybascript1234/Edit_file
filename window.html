@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="icon" href="Image/User.png">
+    <link rel="stylesheet" href="dark.css">
+    <!-- خطوط Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- <div class="dddssw"></div> -->
+    <div class="decoment">
+        <!-- <div style="position: sticky;top: 18px;z-index: 50;"> -->
+            <div class="ssswwe">
+                <div class="flex logo myElement">
+                  <img src="Image/User.png" id="fff2" alt="">
+                  <h3>My Projects</h3>
+
+                  <div class="logo-div Wave-all">
+                    <label class="Wave-cloud"><span id="savedName">Sign in</span> <div><img src="Image/User.png" id="savedImageDisplay" alt=""></div></label>
+                    <hr>
+                    <label id="link1">Open the site</label>
+                    <label>Daytime mode <input type="checkbox" id="darkModeToggle"></label>
+                    <label>Share with friends</label>
+                    <!-- <label>Visit our store <img src="Image/apple-icon-180.webp" alt=""></label> -->
+                    <!-- <hr> -->
+                    <!-- <label>Advertise with us</label> -->
+                    <!-- <label id="shareButton">Share with friends</label> -->
+                  </div>
+                </div>
+                <div id="windows-count"></div>
+                <div id="new-project-btn" class="Wave-cloud new-window-btn" style="display: flex;align-items: center;">
+                    New project
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="coco" id="search-container">
+              <label id="rrt"><icon>search</icon></label>
+              <div style="opacity: 0;" id="clear-search"></div>
+              <input type="search" id="project-search" class="emoji-input" placeholder="Search by project name" autofocus>
+              <!-- <button class="fox toggle Wave-cloud emojibtn t5" data-target="links_history"><icon>options</icon></button> -->
+            </div>
+        <!-- </div> -->
+
+        <div class="library">
+        <div id="projects-page" class="page active">
+        <!-- <header class="header">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Advanced File Editor</span>
+            </div>
+            <div>
+                <button id="new-project-btn" class="btn btn-success">
+                    <i class="fas fa-plus"></i> New Project
+                </button>
+            </div>
+        </header> -->
+        
+        <div class="projects-container">
+            <div class="projects-header">
+                <h1 class="projects-title">Your Projects</h1>
+                <div id="project-count">0 projects</div>
+            </div>
+            
+            <div id="projects-grid" class="projects-grid">
+                <!-- Projects will be added here dynamically -->
+                <div class="empty-projects" style="display: none;">
+                    <i class="fas fa-folder-open"></i>
+                    <h3>No projects yet</h3>
+                    <p>Start by creating a new project to edit text files</p>
+                    <button id="create-first-project" class="btn btn-primary" style="margin-top: 15px;">
+                        <i class="fas fa-plus"></i> Create New Project
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Editor page -->
+    <div id="editor-page" class="page">
+        <header class="header Wave-all">
+            <div style="display: flex; align-items: center;">
+                <button id="toggle-sidebar" class="toggle-sidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo22" style="margin-right: 15px;">
+                    <img src="Image/User.png" alt="">
+                    <span id="editor-project-name">New Project</span>
+                </div>
+            </div>
+            <div class="ddddd"><div id="duvfiles"></div></div>
+            <div class="none">
+                <button id="save-project" class="btn btn-success">
+                    <i class="fas fa-save"></i> <span>Save</span>
+                </button>
+                <button id="back-to-projects" class="btn">
+                    <i class="fas fa-arrow-right"></i> <span>to Projects</span> 
+                </button>
+            </div>
+        </header>
+        
+        <div class="editor-container">
+            <!-- Sidebar -->
+            <div id="editor-sidebar" class="sidebar">
+                <button id="close-sidebar" class="toggle-sidebar" style="display: none; margin-bottom: 15px;">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+                <div class="sidebar-section Wave-all-center">
+                    <h3 class="sidebar-title">Text Formatting</h3>
+                    <div class="tool-group">
+                        <button class="tool-btn" data-command="bold" title="Bold">
+                            <i class="fas fa-bold"></i>
+                        </button>
+                        <button class="tool-btn" data-command="italic" title="Italic">
+                            <i class="fas fa-italic"></i>
+                        </button>
+                        <button class="tool-btn" data-command="underline" title="Underline">
+                            <i class="fas fa-underline"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="tool-group">
+                        <button class="tool-btn" data-command="justifyLeft" title="Align Left">
+                            <i class="fas fa-align-left"></i>
+                        </button>
+                        <button class="tool-btn" data-command="justifyCenter" title="Center">
+                            <i class="fas fa-align-center"></i>
+                        </button>
+                        <button class="tool-btn" data-command="justifyRight" title="Align Right">
+                            <i class="fas fa-align-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="tool-group" style="margin-bottom: 7px;">
+                        <button class="tool-btn" data-command="insertUnorderedList" title="Bulleted List">
+                            <i class="fas fa-list-ul"></i>
+                        </button>
+                        <button class="tool-btn" data-command="insertOrderedList" title="Numbered List">
+                            <i class="fas fa-list-ol"></i>
+                        </button>
+                        <a class="dddse"></a>
+                        <button id="increase-line-height" class="tool-btn" title="Increase Line Height">
+                            <icon>Increase</icon>
+                        </button>
+                        <button id="decrease-line-height" class="tool-btn" title="Decrease Line Height">
+                            <icon>Decrease</icon>
+                        </button>
+                        <button id="reset-line-height" class="tool-btn" title="Reset line height">
+                            <i class="fas fa-undo"></i>
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="tool-group" style="margin-top: 7px;">
+                        <button class="tool-btn oject" data-command="colorcode" title="Numbered List">
+                            <i class="fas fa-code"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Text Color</h3>
+                    <input type="color" id="text-color" class="color-input" value="#000000">
+                    <input type="color" id="highlight-color" class="color-input" value="#ffff00">
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Font Type</h3>
+                    <select id="font-family" class="font-select Wave-all">
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="'Cairo', sans-serif" selected>Cairo</option>
+                        <option value="'Times New Roman', serif">Times New Roman</option>
+                        <option value="'Courier New', monospace">Courier New</option>
+                        <option value="Georgia, serif">Georgia</option>
+                        <option value="Verdana, sans-serif">Verdana</option>
+                        <option value="Tahoma, sans-serif">Tahoma</option>
+                        <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+                    </select>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Font Size</h3>
+                    <select id="font-size" class="font-select">
+                        <option value="12px">Small (12px)</option>
+                        <option value="14px">Normal (14px)</option>
+                        <option value="16px" selected>Medium (16px)</option>
+                        <option value="18px">Large (18px)</option>
+                        <option value="24px">Very Large (24px)</option>
+                        <option value="32px">Huge (32px)</option>
+                    </select>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Image Size</h3>
+                    <select id="image-size" class="font-select">
+                        <option value="10%">Size 10%</option>
+                        <option value="20%">Size 20%</option>
+                        <option value="30%">Size 30%</option>
+                        <option value="405">Size 40%</option>
+                        <option value="50%">Size 50%</option>
+                        <option value="60%">Size 60%</option>
+                        <option value="70%">Size 70%</option>
+                        <option value="80%">Size 80%</option>
+                        <option value="90%">Size 90%</option>
+                        <option value="100%" selected>Size 100%</option>
+                    </select>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Insert</h3>
+                    <div class="tool-group Wave-all-center">
+                        <button class="tool-btn" id="insert-link" title="Insert Link">
+                            <i class="fas fa-link"></i>
+                        </button>
+                        <button class="tool-btn" id="insert-image" title="Insert Image">
+                            <i class="fas fa-image"></i>
+                        </button>
+                        <button class="tool-btn" id="insert-table" title="Insert Table">
+                            <i class="fas fa-table"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main area -->
+            <div class="editor-main">
+                <div class="editor-toolbar none Wave-all">
+                    <input type="search" id="file-name" class="file-name-input emoji-input" placeholder="File Name">
+                    <button id="new-file" class="btn">
+                        <i class="fas fa-file"></i> <span>New File</span>
+                    </button>
+                    <button id="upload-file" class="btn">
+                        <i class="fas fa-upload"></i> <span>Upload File</span> 
+                    </button>
+                    <button id="download-file" class="btn">
+                        <i class="fas fa-download"></i> <span>Download</span>
+                    </button>
+                </div>
+                
+                <div id="editor-area" class="editor-area" contenteditable="true">
+                    <h2>Welcome to Advanced File Editor</h2>
+                    <p>You can start writing here directly, or use the tools in the sidebar to format the text.</p>
+                    <p>To select the text you want to format, select it using the mouse or keyboard, then use the formatting tools.</p>
+                    <p>You can save your project and return to it later from the projects page.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- New project modal -->
+    <div id="new-project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Create New Project</h3>
+                <button class="modal-close" title="Close" id="close-new-project-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="project-name" class="form-label">Project Name</label>
+                    <input type="text" id="project-name" class="form-input emoji-input" placeholder="Enter project name">
+                </div>
+                <div class="form-group">
+                    <label for="project-description" class="form-label">Project Description (Optional)</label>
+                    <textarea id="project-description" class="form-input" rows="3" placeholder="Brief description of the project"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cancel-project" class="btn">Cancel</button>
+                <button id="create-project" class="btn btn-success">Create</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Insert link modal -->
+    <div id="link-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Insert Link</h3>
+                <button class="modal-close" id="close-link-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="link-url" class="form-label">URL Link</label>
+                    <input type="text" id="link-url" class="form-input" placeholder="https://example.com">
+                </div>
+                <div class="form-group">
+                    <label for="link-text" class="form-label">Link Text (Optional)</label>
+                    <input type="text" id="link-text" class="form-input" placeholder="Displayed Text">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cancel-link" class="btn">Cancel</button>
+                <button id="insert-link-btn" class="btn btn-success">Insert</button>
+            </div>
+        </div>
+    </div>
+        </div>
+
+    </div>
+
+    <!--  -->
+    <!-- الإستعمال -->
+    <!--  -->
+    <!-- Wave-cloud لإظهار الموجة من مكان النقر -->
+    <!--  -->
+    <!-- Wave-center  لإظهار الموجه من المنتصف -->
+    <!--  -->
+    <!-- Wave-all  لإظهار الموجة من مكان النقر لعدة عناصر كلاس أضف للديف الرئيسي -->
+    <!--  -->
+    <!-- Wave-all-center اضف للديف الرئيسي لإظهار الموجة من المنتصف لعدة عناصر كلاس -->
+    <!-- ------------------------------------------- -->
+    <!-- يدعم الكود هذه العناصر <a>  <button>  <label>  وغيرها بشرط  -->
+
+    <!-- logo, search, download, save, upload, settings, arrow_, app, star, star2, links, camera, refresh, options, menu2, Decrease, Increase -->
+
+    <script src="icons-svg.js"></script>
+    <script src="window.js"></script>
+    <script src="Wave-cloud.js"></script>
+    <script src="links.js"></script>
+    <script src="Focus on HTML.js"></script>
+    <script src="custom-select.js"></script>
+    <script src="ddddd.js"></script>
+</body>
+</html>
